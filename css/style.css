@@ -1,0 +1,1643 @@
+/*
+00 - Fonts
+01 - Global
+02 - Header
+03 - Hero
+04 - Resources
+05 - About
+06 - Work
+07 - Values
+08 - Footer
+09 - Testimonials page
+10 - Students
+11 - Modal
+12 - Join Student Program page
+13 - Veterinary & Technician page
+14 - Join students page 2
+15 - Media queries
+*/
+
+/* 00-Fonts */
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Black.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-BlackOblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-BlackOblique.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Book.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-BookOblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-BookOblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Light.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Roman.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-MediumOblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-MediumOblique.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Heavy.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Heavy.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-LightOblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-LightOblique.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-HeavyOblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-HeavyOblique.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Medium.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro";
+  src: url("../fonts/AvenirLTPro-Oblique.woff2") format("woff2"),
+    url("../fonts/AvenirLTPro-Oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 01-Global */
+
+body {
+  font-family: "Avenir LT Pro", sans-serif;
+}
+.bg-blue {
+  background-color: #174a96;
+}
+.bg-skyblue {
+  background-color: #3cc4e3;
+}
+.bg-orange {
+  background-color: #f26a4b;
+}
+.bg-violet {
+  background-color: #aa59a3 !important;
+}
+.bg-skyblue-light {
+  background-color: #3cc4e33d;
+}
+.bg-orange-light {
+  background-color: #f9d4a6;
+}
+.bg-pattern {
+  background: url(../img/pattern-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.bg-pattern-light {
+  background: url(../img/bg-pattern-light.jpeg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.bg-pattern-orange {
+  background: url(../img/bg-pattern-orange.jpeg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.bg-violet {
+  background-color: #ab58a2;
+}
+section h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+}
+section p {
+  font-size: 24px;
+  line-height: 32px;
+}
+#top_button {
+  display: inline-block;
+  background-color: #3ec4e4;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+#top_button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#top_button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#top_button:active {
+  background-color: #555;
+}
+#top_button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 12px 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  transition: all 0.4s ease;
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn-skyblue {
+  background: #3cc4e3;
+  border: 1px solid #3cc4e3;
+}
+.btn-skyblue:hover,
+.btn-skyblue:focus {
+  background: #14a1c1;
+  border-color: #14a1c1;
+  color: #fff;
+}
+.btn-blue {
+  background: #174a96;
+  border: 1px solid #174a96;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  background: #063172;
+  border-color: #063172;
+  color: #fff;
+}
+.btn-orange {
+  background: #f26a4b;
+  border: 1px solid #f26a4b;
+}
+.btn-orange:hover,
+.btn-orange:focus {
+  background: #d03b17;
+  border-color: #d03b17;
+  color: #fff;
+}
+.modal-launcher {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: calc(50vw - 20px);
+  max-width: 100vw;
+}
+.modal-launcher img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.modal-launcher.lefty {
+  left: 0;
+  right: auto;
+}
+.no-flex .d-flex {
+  display: block !important;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  z-index: 5;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 02-Header */
+header nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(90, 202, 229, 0.25);
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  content: "\F282";
+  vertical-align: -0.125em;
+  font-family: bootstrap-icons !important;
+  border: none;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+a.dropdown-item {
+  font-size: 16px;
+  line-height: 24px;
+  color: #174a96;
+  font-weight: 500;
+}
+.dropdown-menu {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.dropdown-toggle.show::after {
+  transform: rotateX(180deg);
+}
+.sub-header {
+  padding: 28px 0 27px;
+  background-color: #fff;
+}
+.sub-header a {
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #174a96;
+  text-decoration: none;
+}
+
+/* 03-Hero */
+.hero {
+  padding: 120px 0 70px;
+  position: relative;
+  z-index: 10;
+}
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  padding-right: 1.5em;
+}
+.hero h1 strong {
+  display: block;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 58px;
+  margin-bottom: 16px;
+}
+.landing-page .hero h1 strong:last-of-type {
+  font-weight: 400;
+  line-height: 34px;
+  margin-top: 20px;
+}
+.hero h1 strong:last-of-type span {
+  font-weight: 700;
+}
+.hero h1 span {
+  color: #3cc4e3;
+}
+.hero .carousel {
+  position: absolute;
+  max-width: 50%;
+  top: 110px;
+  right: 0;
+}
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 84px;
+  width: 84px;
+  margin-left: -42px;
+  margin-top: -42px;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 40px;
+  color: #f26a4b;
+  background-color: #ffffff80;
+  transition: all 0.4s ease;
+}
+.play-btn:hover {
+  background-color: #ffffff;
+  color: #f26a4b;
+}
+.carousel-caption {
+  bottom: 50px;
+  left: 2%;
+  right: 2%;
+}
+.carousel .carousel-caption > p,
+.modal-launcher-caption {
+  /* background-color: rgba(45,49,38, 0.5); */
+  border-radius: 99px;
+  margin-bottom: 0;
+  padding: 7px 14px;
+}
+.modal-launcher-caption {
+  background-color: rgba(60, 196, 227, 0.8);
+}
+.hero p {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+}
+.hero p a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 7px 14px;
+  background-color: rgba(60, 196, 227, 0.8);
+  color: #fff;
+  border-radius: 27px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.carousel-indicators {
+  background-color: #ffffffcc;
+  padding: 14px 22px;
+  border-radius: 30px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 5px;
+  justify-content: space-between;
+}
+.carousel-indicators .carousel-control-prev,
+.carousel-indicators .carousel-control-next {
+  height: 14px;
+  width: 16px;
+  background-color: transparent;
+  position: relative;
+  border: none;
+}
+.carousel-indicators .carousel-control-prev-icon {
+  background-image: url(../img/arrow-left.svg);
+}
+.carousel-indicators .carousel-control-next-icon {
+  background-image: url(../img/arrow-left.svg);
+  transform: rotate(180deg);
+}
+.carousel-indicators
+  button:not(.carousel-control-prev, .carousel-control-next) {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.carousel-indicators button.active {
+  background-color: #174a96;
+}
+
+/* 04-Resources */
+.resources {
+  padding: 100px 0;
+  color: #174a96;
+}
+.resources p {
+  margin-bottom: 100px;
+}
+.squares {
+  border-radius: 100px 0 0 0;
+  padding: 70px 20px 35px 40px;
+  background-color: #f26a4b;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.squares h3 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  color: #fff;
+  margin-bottom: 80px;
+  flex-grow: 1;
+}
+.squares span {
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+.squares span img {
+  margin-right: 25px;
+}
+.squares span i {
+  flex-grow: 2;
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+/* 05-About */
+.about,
+.work {
+  padding: 50px;
+  position: relative;
+}
+/* .about .col-lg-6 {
+  padding-right: 4em;
+} */
+.about h2,
+.work h2 {
+  color: #3cc4e3;
+  margin-bottom: 30px;
+}
+.about p,
+.work p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* 06-Work */
+.work {
+  padding: 135px 0;
+}
+
+.work h2 {
+  color: #fff;
+}
+/* .work .col-lg-6 {
+  padding-right: 0;
+  padding-left: 6em;
+} */
+.modal-launcher-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 2%;
+  right: 2%;
+  padding: 7px 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+.work #workCarouselIndicators {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  max-width: calc(50% - 24px);
+}
+.work #workCarouselIndicators .carousel-caption {
+  background-color: rgba(60, 196, 227, 0.8);
+  border-radius: 99px;
+  padding: 0;
+  bottom: 80px;
+}
+
+/* 07-Values */
+.values {
+  padding: 130px 0;
+  color: #174a96;
+}
+.values p {
+  margin-bottom: 40px;
+}
+.accordion-item {
+  background-color: #3cc4e3;
+  margin-bottom: 26px;
+  border-radius: 16px !important;
+}
+.accordion-button {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  color: #174a96;
+  padding: 40px;
+}
+.accordion-button span {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #3cc4e3;
+  border-radius: 16px 16px !important;
+  box-shadow: none;
+  color: #174a96;
+}
+.accordion-body {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  padding: 0 40px 40px;
+}
+.accordion-button::after {
+  background-image: none;
+  content: "\F282";
+  font-family: bootstrap-icons !important;
+  border: 2px solid #174a96;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding-top: 5px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+/* 08-Footer */
+footer {
+  position: relative;
+  padding: 90px 0 60px;
+  z-index: 10;
+}
+footer .two-col-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.vertical-separator {
+  width: 6px;
+  height: 97px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+footer .two-col-sm p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  max-width: 525px;
+}
+footer .copyright,
+footer .col-lg-2 a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+footer .social {
+  display: flex;
+  justify-content: end;
+}
+footer .social a {
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 24px;
+}
+
+/* 09-Testimonials page */
+.testimonials-page .hero {
+  background: url(../img/hero-testimonials.png) no-repeat center;
+  background-size: cover;
+  padding: 100px 0 55px;
+}
+.testimonials-page .hero .container {
+  position: relative;
+}
+.testimonials-page h1 {
+  max-width: 800px;
+  margin-bottom: 70px;
+  padding-right: 0;
+}
+.testimonials-page .logo-big {
+  width: 290px;
+}
+.testimonials-page .hero .btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* 10-Students */
+.students {
+  padding: 60px 0 100px;
+}
+.students h2 {
+  color: #174a96;
+  margin-bottom: 65px;
+}
+.student-square {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.student-square .img-container {
+  width: 33.3%;
+}
+.student-square .img-container img {
+  height: 100%;
+  object-fit: cover;
+}
+.student-square .txt-container {
+  width: 77.6%;
+  padding: 24px 16px;
+  background-color: #ab58a2;
+}
+.student-square h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.student-square h3 span {
+  display: block;
+}
+.student-square p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* 11-Modals */
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+.modal-header {
+  border: none;
+}
+.btn-close {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(255,255,255, 1)' stroke-width='2' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+  color: #fff;
+  opacity: 1;
+}
+.modal-body {
+  padding: 0;
+  box-shadow: 8px 8px 24px rgba(24, 37, 65, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* 12-Join Student Program page */
+.join-page .hero {
+  background-image: url(../img/Skyblue_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.join-page-2 .hero {
+  background-image: url(../img/hero-testimonials.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.join-page .resources {
+  padding: 50px 0;
+}
+.join-page .resources .container > h2 {
+  margin-bottom: 23px;
+}
+.join-page .resources p {
+  margin-bottom: 75px;
+}
+.join-page .resources a {
+  color: #fff;
+}
+.join-page .accordion-body p {
+  margin-bottom: 30px;
+}
+.join-page .register-section {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.join-page-2 .register-section {
+  padding: 50px 0;
+}
+.join-page .register-section h2,
+.join-page .register-section p {
+  color: #174a96;
+}
+/* .join-page .register-section p{
+  font-size: 30px;
+  line-height: 38px;
+}
+.join-page .register-section p ~ p{
+  font-size: 24px;
+  line-height: 32px;
+} */
+.join-page .welcome-section {
+  position: relative;
+  padding: 125px 0 115px;
+}
+.join-page .floating-title {
+  text-align: center;
+  padding: 75px 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 1010px;
+  font-size: 45px;
+  line-height: 114.6%;
+  margin: -250px auto 95px;
+  box-shadow: 0px 0px 28px rgba(60, 196, 227, 0.17);
+  color: #174a96;
+  font-weight: 400;
+}
+.welcome-section .carousel {
+  max-width: calc(50% - 24px);
+  position: absolute;
+  top: 270px;
+  right: 0;
+}
+.welcome-section .carousel .play-btn {
+  color: #3cc4e3;
+}
+.welcome-section .carousel .carousel-caption p,
+.modal-launcher-caption p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.join-page .welcome-section p {
+  color: #174a96;
+  margin-bottom: 30px;
+}
+.join-page .welcome-section ul {
+  margin-bottom: 50px;
+  list-style: none;
+  padding-left: 0;
+}
+.join-page .welcome-section li {
+  font-size: 24px;
+  line-height: 32px;
+  color: #174a96;
+  padding-left: 80px;
+  margin-bottom: 32px;
+  background-image: url(../img/veterinarian-student-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 60px;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+.join-page .welcome-section li:nth-child(2) {
+  background-image: url(../img/rotate-icon.svg);
+}
+.join-page .welcome-section li:last-child {
+  background-image: url(../img/hospital-icon.svg);
+}
+.join-page .testimonials-section {
+  padding: 50px 0 170px;
+  background: url(../img/how-we-work.png) no-repeat left 120px;
+  background-size: calc(50% - 24px);
+}
+.join-page .testimonials-section h2 {
+  color: #174a96;
+}
+.join-page .testimonials-section .carousel {
+  min-height: 505px;
+}
+.join-page .testimonials-section .carousel .carousel-control-prev,
+.join-page .testimonials-section .carousel .carousel-control-next {
+  height: 45px;
+  width: 45px;
+  padding: 10px;
+  position: relative;
+  border: 2px solid #174a96;
+  opacity: 1;
+  display: inline-block;
+  text-align: center;
+}
+.join-page .testimonials-section .carousel .carousel-control-prev i,
+.join-page .testimonials-section .carousel .carousel-control-next i {
+  color: #174a96;
+}
+.join-page-2 .testimonials-section .carousel .carousel-control-prev,
+.join-page-2 .testimonials-section .carousel .carousel-control-next {
+  border-color: #fff;
+}
+.join-page-2 .testimonials-section .carousel .carousel-control-prev i,
+.join-page-2 .testimonials-section .carousel .carousel-control-next i {
+  color: #fff;
+}
+.join-page .testimonials-section p {
+  font-size: 30px;
+  line-height: 38px;
+  color: #174a96;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.join-page .testimonials-section .name {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #174a96;
+  margin-bottom: 30px;
+}
+.join-page .testimonials-section .line {
+  display: block;
+  width: 79px;
+  height: 3px;
+  background-color: #174a96;
+  margin-right: 25px;
+}
+.join-page .mentorship-section .floating-title {
+  font-weight: 400;
+  margin-top: -260px;
+}
+.join-page .mentorship-section h2:not(.floating-title) {
+  color: #174a96;
+  margin-bottom: 32px;
+}
+.join-page .mentorship-section ul li {
+  padding-left: 50px;
+  min-height: auto;
+  background-image: url(../img/check-circle.svg) !important;
+  background-size: 35px;
+  background-position: left center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+.join-page .mentorship-section .carousel {
+  top: 310px;
+}
+.join-page .programs-section p {
+  margin-bottom: 35px;
+}
+/* .join-page .programs-section p ~ p{
+  font-weight: 500;
+font-size: 30px;
+line-height: 38px;
+} */
+.join-page .programs-section .accordion p {
+  margin-bottom: 0;
+}
+.join-page .programs-section .accordion {
+  margin-bottom: 100px;
+}
+.join-page .programs-section .accordion:last-of-type {
+  margin-bottom: 0;
+}
+.join-page .why-section {
+  padding: 50px 0;
+  background-color: rgba(60, 196, 227, 0.1);
+  color: #174a96;
+}
+.join-page .why-section .modal-launcher {
+  position: relative;
+  max-width: 100%;
+  top: 0;
+}
+.join-page .why-section .modal-launcher .play-btn {
+  color: #14a1c1;
+}
+.join-page .why-section .modal-launcher .modal-launcher-caption {
+  position: absolute;
+  font-weight: 500;
+  font-size: 21.7345px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  bottom: 20px;
+}
+
+/* Veterinary & Technician page */
+.veterinary-technician-page .hero {
+  background-image: url(../img/bg-pattern-orange.jpeg);
+  padding-bottom: 0;
+}
+.veterinary-technician-page .hero .modal-launcher {
+  margin-bottom: -70px;
+}
+.veterinary-technician-page .hero h1 {
+  max-width: 500px;
+  padding-right: 0;
+}
+.veterinary-technician-page .hero h1 strong {
+  line-height: 30px;
+}
+.veterinary-technician-page .hero h1 span {
+  color: #174a96;
+}
+/* .veterinary-technician-page .hero .btn{
+  bottom: -70px;
+} */
+.veterinary-technician-page .resources {
+  padding-top: 100px;
+}
+.veterinary-technician-page .programs-section {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.veterinary-technician-page .accordion-button:not(.collapsed),
+.veterinary-technician-page .accordion-item {
+  background-color: #f26a4b;
+  color: #fff;
+}
+.veterinary-technician-page .accordion-button {
+  color: #fff;
+}
+.veterinary-technician-page .accordion-button::after {
+  border-color: #fff;
+}
+.veterinary-technician-page .register-section {
+  padding-bottom: 50px;
+}
+.veterinary-technician-page #externships {
+  padding-top: 50px;
+  color: #174a96;
+  padding-bottom: 50px;
+}
+.veterinary-technician-page #externships h2 {
+  margin-bottom: 32px;
+  color: #fff;
+}
+.veterinary-technician-page #externships p {
+  color: #fff;
+  padding-right: 3.5em;
+  margin-bottom: 40px;
+}
+.veterinary-technician-page #externships .modal-launcher-caption p {
+  padding-right: 0;
+  margin-bottom: 0;
+}
+.veterinary-technician-page #externships .btn {
+  background-color: #fff;
+  color: #f26a4b;
+  border-color: #f26a4b;
+}
+.veterinary-technician-page .programs-section h2 {
+  text-transform: none;
+}
+.veterinary-technician-page .why-section {
+  background-color: #ff74561a;
+}
+.veterinary-technician-page .why-section .modal-launcher .play-btn {
+  color: #f26a4b;
+}
+.veterinary-technician-page .resources-extra {
+  position: relative;
+  color: #174a96;
+  padding: 50px 0;
+}
+.veterinary-technician-page .resources-extra h2,
+.veterinary-technician-page .resources-extra p {
+  margin-bottom: 40px;
+}
+.veterinary-technician-page .resources-extra ul {
+  list-style: none;
+  padding-left: 0;
+}
+.veterinary-technician-page .resources-extra li {
+  margin-bottom: 20px;
+}
+.veterinary-technician-page .resources-extra li a {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #174a96;
+}
+.veterinary-technician-page .resources-extra li a i {
+  margin-right: 10px;
+}
+
+/* 14-Join students page 2 */
+.join-page-2 .intro-section {
+  padding: 50px 0 100px;
+  color: #174a96;
+  background-color: #ab58a23d;
+}
+.join-page-2 .intro-section p:first-of-type {
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+.join-page-2 .intro-section p:last-of-type {
+  /* font-weight: 800;
+  font-size: 16px;
+  line-height: 20px; */
+  margin-bottom: 30px;
+}
+.join-page-2 .testimonials-section {
+  background: url(../img/extern-testimonials-img.png) no-repeat left center;
+  background-size: calc(50% - 24px);
+  padding: 50px 0 140px;
+}
+.join-page-2 .testimonials-section .col-lg-6 {
+  padding-top: 70px;
+}
+.join-page-2 .testimonials-section h2,
+.join-page-2 .testimonials-section p {
+  color: #fff;
+}
+.join-page-2 .testimonials-section .carousel {
+  min-height: 315px;
+}
+.join-page-2 .testimonials-section .name {
+  color: #3cc4e3;
+}
+.join-page-2 .testimonials-section .line {
+  background-color: #3cc4e3;
+}
+.join-page-2 .cta-list {
+  padding: 50px 0 30px;
+  background: url(../img/benefit-bk-pattern.png);
+  background-size: cover;
+}
+/* .join-page-2 .cta-list ul{
+  max-width: 890px;
+  margin: 0 auto;
+} */
+.join-page-2 .cta-list li {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.join-page-2 .cta-list li span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.join-page-2 .interested-section {
+  background: url(../img/interested-img.png) no-repeat left 50px;
+  background-size: calc(50% - 24px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.join-page-2 .interested-section .col-lg-6 {
+  padding-top: 0;
+}
+.join-page-2 .interested-section h2,
+.join-page-2 .interested-section p {
+  color: #174a96;
+  margin-bottom: 30px;
+}
+.join-page-2 .interested-section p a {
+  color: #3cc4e3;
+  font-weight: 800;
+  text-decoration: none;
+}
+.join-page-2 .interested-section p span {
+  display: block;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+/* 15-Media Queries */
+@media screen and (min-width: 1920px) {
+  .hero .carousel {
+    max-width: 45%;
+  }
+  .about,
+  .work {
+    padding: 50px 0;
+  }
+  .landing-page .work {
+    padding: 210px 0 220px;
+  }
+  .veterinary-technician-page .register-section {
+    padding-bottom: 190px;
+    padding-top: 180px;
+  }
+  .veterinary-technician-page .resources-extra {
+    position: relative;
+    color: #174a96;
+    padding: 180px 0 190px;
+  }
+  .join-page .register-section {
+    padding-top: 50px;
+    padding-bottom: 160px;
+  }
+  .join-page-2 .summer-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .join-page .welcome-section {
+    position: relative;
+    padding: 220px 0 115px;
+  }
+  .join-page .testimonials-section {
+    padding: 150px 0 200px;
+  }
+  .join-page-2 .testimonials-section {
+    padding: 150px 0 200px;
+  }
+  .join-page .mentorship-section .floating-title {
+    font-weight: 400;
+    margin-top: -340px;
+  }
+  .join-page .mentorship-section .carousel {
+    top: 240px;
+  }
+  .join-page .floating-title {
+    margin-top: -330px;
+  }
+  .resources {
+    padding-top: 240px;
+  }
+  .work #workCarouselIndicators {
+    max-width: calc(50% - 60px);
+  }
+  .welcome-section .carousel {
+    top: 200px;
+  }
+  .join-page .testimonials-section {
+    background-position: left 50px;
+  }
+  .join-page-2 .interested-section {
+    padding: 230px 0 210px;
+  }
+  .modal-launcher {
+    width: calc(50vw - 12px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero .carousel {
+    max-width: 55%;
+    top: 90px;
+  }
+  .modal-launcher {
+    width: calc(50vw - 12px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar-brand img {
+    width: 160px;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .hero {
+    padding: 50px 0;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    padding-right: 1em;
+  }
+  .hero .carousel {
+    position: relative;
+    max-width: 100%;
+    right: -62px;
+    top: 0;
+    margin-top: 50px;
+  }
+  .resources .col-lg-6 {
+    margin-bottom: 22px;
+  }
+  .about {
+    padding: 50px 0;
+    position: relative;
+  }
+  .modal-launcher {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    top: auto;
+    right: -62px;
+    margin-top: 50px;
+    left: auto;
+  }
+  .work #workCarouselIndicators {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    margin-top: 50px;
+    left: -62px;
+  }
+  .work {
+    padding: 50px 0;
+  }
+  footer .two-col-sm {
+    flex-direction: column;
+  }
+  .vertical-separator {
+    transform: rotate(90deg);
+  }
+  footer .two-col-sm p {
+    text-align: center;
+  }
+  footer .row.align-items-center {
+    text-align: center;
+  }
+  footer .row.align-items-center .col-lg-4:first-of-type {
+    order: 2;
+  }
+  footer .col-lg-2 {
+    margin-bottom: 16px;
+  }
+  footer .social {
+    display: none;
+  }
+  .join-page .register-section .modal-launcher {
+    position: relative;
+    margin-left: auto;
+  }
+  .join-page .floating-title {
+    max-width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 35px;
+  }
+  .welcome-section .carousel,
+  .join-page .mentorship-section .carousel {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    margin-top: 50px;
+    right: -62px;
+  }
+  .join-page .testimonials-section {
+    padding: 60px 0 120px;
+    background: transparent;
+  }
+  .join-page .why-section .modal-launcher {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    margin-bottom: 50px;
+  }
+  .sub-header {
+    overflow-x: scroll;
+  }
+  .sub-header a {
+    white-space: nowrap;
+  }
+  .veterinary-technician-page .welcome-section .modal-launcher {
+    position: relative;
+    margin-left: auto;
+  }
+  .veterinary-technician-page .resources-extra {
+    background: transparent;
+  }
+  .join-page .register-section {
+    padding-top: 50px;
+    padding-bottom: 170px;
+  }
+  .join-page-2 .register-section,
+  .veterinary-technician-page .register-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .veterinary-technician-page .hero {
+    padding-bottom: 0;
+  }
+  .veterinary-technician-page .hero h1 {
+    max-width: 100%;
+  }
+  .veterinary-technician-page .hero .btn {
+    display: none;
+  }
+  .veterinary-technician-page .hero .modal-launcher {
+    top: auto;
+    margin-bottom: -150px;
+    z-index: 2;
+    margin-top: 0;
+  }
+  .veterinary-technician-page .resources#educationalResources {
+    padding-top: 190px;
+    position: relative;
+  }
+  .veterinary-technician-page #externships {
+    padding-top: 50px;
+    color: #174a96;
+    padding-bottom: 50px;
+  }
+  .veterinary-technician-page .resources {
+    padding-top: 50px;
+  }
+  .join-page-2 .intro-section {
+    padding: 50px 0;
+  }
+  .join-page-2 .testimonials-section {
+    padding: 60px 0;
+  }
+  .join-page-2 .testimonials-section .col-lg-6 {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-launcher,
+  .hero .carousel {
+    right: -36px;
+  }
+  .work #workCarouselIndicators {
+    left: -36px;
+  }
+  .welcome-section .carousel,
+  .join-page .mentorship-section .carousel {
+    right: -36px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  button.navbar-toggler {
+    border: none;
+  }
+  .hero {
+    padding-bottom: 210px;
+  }
+  h1 {
+    font-size: 27px;
+    line-height: 33px;
+    padding-right: 2em;
+  }
+  .hero .carousel {
+    bottom: -80px;
+  }
+  .hero .carousel {
+    max-width: 95%;
+  }
+  .play-btn {
+    height: 44px;
+    width: 44px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: -22px;
+    margin-left: -22px;
+  }
+  .carousel-caption {
+    bottom: 20px;
+    left: 2%;
+    right: 2%;
+  }
+  .hero p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .carousel-indicators {
+    padding: 10px 22px;
+    max-width: 160px;
+    left: 50%;
+    margin-left: -80px;
+    bottom: -10px;
+  }
+  .resources {
+    padding: 150px 0 40px;
+    color: #174a96;
+  }
+  section h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  section p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .resources p {
+    margin-bottom: 20px;
+  }
+  .squares h3 {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 15px;
+  }
+  .squares {
+    border-radius: 40px 0 0 0;
+    padding: 25px 20px 20px 25px;
+  }
+  .squares span img {
+    margin-right: 15px;
+    width: 28px;
+  }
+  .squares span {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .accordion-button {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 20px;
+  }
+  .accordion-button::after {
+    height: 23px;
+    width: 23px;
+    font-size: 15px;
+    padding-top: 3px;
+  }
+  .no-flex .d-flex {
+    display: flex !important;
+  }
+  .values {
+    padding: 80px 0 30px;
+  }
+  footer .two-col-sm img {
+    max-width: 245px;
+  }
+  .testimonials-page:not(.veterinary-technician-page) .hero {
+    padding: 200px 0 22px;
+    background-position: 70% top;
+  }
+  .testimonials-page h1 {
+    max-width: 510px;
+    margin-bottom: 10px;
+    padding-right: 4em;
+  }
+  .testimonials-page .logo-big {
+    width: 165px;
+    margin-bottom: 40px;
+  }
+  .testimonials-page:not(.veterinary-technician-page) .hero .btn {
+    position: static;
+    display: block;
+    max-width: 160px;
+  }
+  .students h2 {
+    color: #174a96;
+    margin-bottom: 65px;
+    padding-right: 1em;
+  }
+  .student-square {
+    flex-direction: column;
+    border-radius: 0 16px 0 0;
+  }
+  .student-square .img-container {
+    width: 100%;
+  }
+  .student-square .img-container img {
+    height: 270px;
+    width: 100%;
+    object-position: 0 -80px;
+  }
+  .student-square .txt-container {
+    width: 100%;
+  }
+  .student-square h3 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .accordion-body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .veterinary-technician-page .welcome-section .modal-launcher {
+    max-width: 90%;
+    top: 0;
+  }
+  .join-page-2 .cta-list li {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .join-page .floating-title {
+    max-width: 90%;
+    padding: 30px 15px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .join-page .testimonials-section {
+    padding: 60px 0 170px;
+  }
+  .join-page .testimonials-section p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .join-page .testimonials-section .carousel {
+    min-height: auto;
+  }
+  .join-page .programs-section .accordion {
+    margin-bottom: 50px;
+  }
+  .join-page .register-section .modal-launcher {
+    top: 0;
+  }
+  .veterinary-technician-page .register-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .veterinary-technician-page #externships {
+    padding-bottom: 50px;
+  }
+  .veterinary-technician-page #externships .modal-launcher-caption p {
+    margin-bottom: 0;
+  }
+  .modal-launcher-caption {
+    bottom: 0px;
+  }
+  .modal-launcher-caption p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .veterinary-technician-page
+    .why-section
+    .modal-launcher
+    .modal-launcher-caption {
+    font-size: 16px;
+    line-height: 20px;
+    bottom: 0px;
+    padding: 0;
+  }
+  .join-page .why-section .modal-launcher {
+    margin-bottom: 0px;
+  }
+  .veterinary-technician-page .resources-extra {
+    padding: 50px 0;
+  }
+  .veterinary-technician-page .resources-extra .modal-launcher {
+    margin-top: 0;
+  }
+  .veterinary-technician-page .resources-extra li a {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .join-page-2 .testimonials-section {
+    padding: 50px 0;
+  }
+  .modal-launcher,
+  .hero .carousel,
+  .welcome-section .carousel,
+  .join-page .mentorship-section .carousel {
+    right: -12px;
+  }
+  .accordion-button span {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .accordion-body {
+    padding: 0 20px 20px 10px;
+  }
+}
