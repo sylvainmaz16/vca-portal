@@ -363,7 +363,7 @@ h1 {
 .hero .carousel {
   position: absolute;
   max-width: 50%;
-  top: 110px;
+  top: 80px;
   right: 0;
 }
 .play-btn {
@@ -746,7 +746,7 @@ footer .social a {
 
 /* 12-Join Student Program page */
 .join-page .hero {
-  background-image: url(../img/Skyblue_header.png);
+  background-image: linear-gradient(to bottom, rgb(27 88 150 / 70%), rgb(48 55 63 / 50%)), url(../img/Skyblue_header.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -766,6 +766,10 @@ footer .social a {
 }
 .join-page .resources a {
   color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  cursor: pointer;
 }
 .join-page .accordion-body p {
   margin-bottom: 30px;
@@ -867,11 +871,17 @@ footer .social a {
   height: 45px;
   width: 45px;
   padding: 10px;
-  position: relative;
+  /*position: relative;*/
   border: 2px solid #174a96;
   opacity: 1;
   display: inline-block;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+.join-page .testimonials-section .carousel .carousel-control-next {
+  left:  50px;
 }
 .join-page .testimonials-section .carousel .carousel-control-prev i,
 .join-page .testimonials-section .carousel .carousel-control-next i {
@@ -970,6 +980,13 @@ line-height: 38px;
   bottom: 20px;
 }
 
+#haveQuestions p {
+  margin-bottom: 0px;
+}
+#haveQuestions a {
+  color: inherit;
+}
+
 /* Veterinary & Technician page */
 .veterinary-technician-page .hero {
   background-image: url(../img/bg-pattern-orange.jpeg);
@@ -981,9 +998,11 @@ line-height: 38px;
 .veterinary-technician-page .hero h1 {
   max-width: 500px;
   padding-right: 0;
+  font-weight: bold;
 }
 .veterinary-technician-page .hero h1 strong {
   line-height: 30px;
+  font-weight: 500;
 }
 .veterinary-technician-page .hero h1 span {
   color: #174a96;
@@ -1174,7 +1193,7 @@ line-height: 38px;
   .veterinary-technician-page .resources-extra {
     position: relative;
     color: #174a96;
-    padding: 180px 0 190px;
+    /*padding: 180px 0 190px;*/
   }
   .join-page .register-section {
     padding-top: 50px;
@@ -1221,6 +1240,15 @@ line-height: 38px;
   }
   .modal-launcher {
     width: calc(50vw - 12px);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .work #workCarouselIndicators {
+    bottom: 50px;
+  }
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
   }
 }
 

@@ -29,7 +29,7 @@
     <header>
       <nav class="navbar navbar-expand-md bg-blue">
         <div class="container">
-          <a class="navbar-brand" href="https://vcahospitals.com/">
+          <a class="navbar-brand" href="https://mcve-stg.csod.com/catalog/CustomPage.aspx?id=221000682">
             <img src="img/logo.svg" alt="" />
           </a>
           <button
@@ -75,10 +75,10 @@
                   Start Your Career at VCA
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.vcacareers.com">VCA Careers</a></li>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="https://mcve-stg.csod.com/catalog/CustomPage.aspx?id=221000686">VCA Student Programs</a>
-                  </li>
-                  <li><a class="dropdown-item" href="https://www.vcacareers.com">VCA Careers</a></li>
                   </li>
                 </ul>
               </li>
@@ -180,7 +180,7 @@
                       <p>
                         Join our VCA Student Programs, gain experience, and
                         learn from the best.<br>
-                        <a href="https://mcve-stg.csod.com/catalog/CustomPage.aspx?id=221000686" target="_blank"
+                        <a href="https://mcve-stg.csod.com/catalog/CustomPage.aspx?id=221000686" target="_top"
                           >Learn more about our externships and summer programs
                           here. <i class="bi bi-arrow-right-short"></i>
                         </a>
@@ -196,8 +196,7 @@
                     <div class="carousel-caption">
                       <p>
                         Start your career at VCA.<br>
-                        <a href="https://www.vcacareers.com/" target="_blank"
-                          >Learn more about the benefits of working with us at
+                        <a onclick="window.open('https://www.vcacareers.com', '_blank', 'toolbar=yes');">Learn more about the benefits of working with us at
                           VCA. <i class="bi bi-arrow-right-short"></i
                         ></a>
                       </p>
@@ -256,7 +255,7 @@
                 better world for pets. Learn more about the story we're writing
                 together about what's next in veterinary care.
               </p>
-              <a href="#" class="btn btn-skyblue">Learn more</a>
+              <a class="btn btn-skyblue" onclick="window.open('https://www.vcacareers.com/global/en/who-we-are', '_blank', 'toolbar=yes');">Learn more</a>
             </div>
             <div class="col-lg-6">
               <div class="modal-launcher">
@@ -345,7 +344,7 @@
                   ></a>
                   <div class="carousel-caption">
                     <p>
-                      Dr. Timbrala Marshall, Director of Equity, Inclusion, and Diversity Programs, shares some of our EI&D efforts VCA
+                      Dr. Timbrala Marshall, Director of Equity, Inclusion, <br />and Diversity Programs, shares some of our EI&D efforts at VCA
                     </p>
                   </div>
                 </div>
@@ -359,7 +358,7 @@
                 veterinary profession. Learn more about the support you can expect when you work with us at VCA, from Health & Well-being benefits to how we celebrate equity, inclusion,
                 and diversity.
               </p>
-              <a href="#" class="btn btn-blue">Learn more</a>
+              <a class="btn btn-blue" onclick="window.open('https://www.vcacareers.com/global/en/how-we-work', '_blank', 'toolbar=yes');">Learn more</a>
             </div>
             
           </div>
@@ -377,7 +376,7 @@
 
       <section class="values">
         <div class="container">
-          <h2>Our cultural values</h2>
+          <h2>Our Cultural Values</h2>
           <p>
             Our cultural values guide who we are and how we work. They're also
             our driving force in supporting you, the future of veterinary
@@ -665,5 +664,10 @@
     ></script>
     <!-- Custom JS -->
     <script src="https://mcve-stg.csod.com/content/mcve/publications/8235/VCA_Upload/VCA/js/functions.js"></script>
+    <script type="text/javascript">
+      $('.modal').on('hidden.bs.modal', function (e) {
+        $(e.target).find('iframe').each(function(index, iframe){$(iframe).attr('src', $(iframe).attr('src'));});
+      })
+    </script>
   </body>
 </html>
