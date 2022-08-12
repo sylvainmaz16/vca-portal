@@ -841,7 +841,7 @@ footer .social a {
   color: #174a96;
   padding-left: 80px;
   margin-bottom: 32px;
-  background-image: url(../img/veterinarian-student-icon.svg);
+  background-image: url(../img/vca-medicine-2.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 60px;
@@ -850,10 +850,10 @@ footer .social a {
   min-height: 80px;
 }
 .join-page .welcome-section li:nth-child(2) {
-  background-image: url(../img/rotate-icon.svg);
+  background-image: url(../img/vca-medicine.png);
 }
 .join-page .welcome-section li:last-child {
-  background-image: url(../img/hospital-icon.svg);
+  background-image: url(../img/vca-medicine-3.png);
 }
 .join-page .testimonials-section {
   padding: 50px 0 170px;
