@@ -362,9 +362,9 @@ h1 {
 }
 .hero .carousel {
   position: absolute;
-  max-width: 50%;
-  top: 80px;
+  top: 50px;
   right: 0;
+  max-width: calc(50% - 24px);
 }
 .play-btn {
   display: flex;
@@ -560,7 +560,7 @@ h1 {
 
 /* 07-Values */
 .values {
-  padding: 130px 0;
+  padding: 120px 0;
   color: #174a96;
 }
 .values p {
@@ -570,6 +570,10 @@ h1 {
   background-color: #3cc4e3;
   margin-bottom: 26px;
   border-radius: 16px !important;
+}
+.accordion-item li {
+  line-height: 1.8;
+  font-weight: bold;
 }
 .accordion-button {
   background-color: transparent;
@@ -841,7 +845,6 @@ footer .social a {
   color: #174a96;
   padding-left: 80px;
   margin-bottom: 32px;
-  background-image: url(../img/vca-medicine-2.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 60px;
@@ -849,10 +852,27 @@ footer .social a {
   align-items: center;
   min-height: 80px;
 }
-.join-page .welcome-section li:nth-child(2) {
+.join-page .welcome-section#mentorships li {
+  padding-left: 0;
+}
+.join-page .welcome-section#mentorships li:before {
+  content: "";
+  min-width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.join-page .welcome-section#mentorships li:first-child:before {
+  background-image: url(../img/vca-medicine-2.png);
+}
+.join-page .welcome-section#mentorships li:nth-child(2):before {
   background-image: url(../img/vca-medicine.png);
 }
-.join-page .welcome-section li:last-child {
+.join-page .welcome-section#mentorships li:last-child:before {
   background-image: url(../img/vca-medicine-3.png);
 }
 .join-page .testimonials-section {
@@ -926,6 +946,7 @@ footer .social a {
   color: #174a96;
   margin-bottom: 32px;
 }
+/*.join-page .mentorship-section ul li {*/
 .join-page .mentorship-section ul li {
   padding-left: 50px;
   min-height: auto;
@@ -974,16 +995,20 @@ line-height: 38px;
   position: absolute;
   font-weight: 500;
   font-size: 21.7345px;
-  line-height: 24px;
+  line-height: 32px;
   text-align: center;
   color: #ffffff;
   bottom: 20px;
 }
 
-#haveQuestions p {
+#contact_us {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+#contact_us p {
   margin-bottom: 0px;
 }
-#haveQuestions a {
+#contact_us a {
   color: inherit;
 }
 
@@ -1197,7 +1222,7 @@ line-height: 38px;
   }
   .join-page .register-section {
     padding-top: 50px;
-    padding-bottom: 160px;
+    padding-bottom: 50px;
   }
   .join-page-2 .summer-section {
     padding-top: 50px;
@@ -1223,9 +1248,9 @@ line-height: 38px;
   .join-page .floating-title {
     margin-top: -330px;
   }
-  .resources {
-    padding-top: 240px;
-  }
+  /*.resources {
+    padding-top: 110px;
+  }*/
   .work #workCarouselIndicators {
     max-width: calc(50% - 60px);
   }
