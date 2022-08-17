@@ -147,7 +147,7 @@ body {
   background-color: #3cc4e33d;
 }
 .bg-orange-light {
-  background-color: #f9d4a6;
+  background-color: #FFB4AB;
 }
 .bg-pattern {
   background: url(../img/pattern-bg.jpg) no-repeat;
@@ -1001,15 +1001,38 @@ line-height: 38px;
   bottom: 20px;
 }
 
-#contact_us {
-  background-color: #fafafa;
+/* Contact */
+.contact {
   padding: 50px 0;
 }
-#contact_us p {
-  margin-bottom: 0px;
+.contact form {
+  max-width: 60%;
+  margin: 0 auto;
 }
-#contact_us a {
-  color: inherit;
+.contact h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contact .form-control {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+}
+.contact input.form-control {
+  height: 55px;
+}
+.contact .form-control::-moz-placeholder {
+  color: #fff;
+}
+.contact .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+.contact input.btn {
+  padding: 12px 46px;
 }
 
 /* Veterinary & Technician page */
@@ -1083,7 +1106,7 @@ line-height: 38px;
   text-transform: none;
 }
 .veterinary-technician-page .why-section {
-  background-color: #ff74561a;
+  background-color: #FFB4AB;
 }
 .veterinary-technician-page .why-section .modal-launcher .play-btn {
   color: #f26a4b;
